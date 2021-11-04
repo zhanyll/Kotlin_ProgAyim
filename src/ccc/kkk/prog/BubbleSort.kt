@@ -10,7 +10,7 @@ fun bubbleSort(array:IntArray):IntArray{
     var swap = true
     while(swap){
         swap = false
-        for(i in 0 until array.size-1){
+        for(i in 0 until array.size-1){ // лишние итерации по уже отсортированной части массива
             if(array[i] > array[i+1]){
                 val inf = array[i]
                 array[i] = array[i+1]
