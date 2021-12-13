@@ -52,7 +52,7 @@ fun main(args: Array<String>) {
     println("Enter a number of names you would like to add: ")
     val num = readLine()!!.toInt()
     for (i in 1..num) {
-        val input = Scanner(System.`in`)
+        val input = Scanner(System.`in`) // Scanner нужно обязательно закрывать
         val (name, number) = input.nextLine().split(' ')
 
         hashMap.put(name, number.toInt())
@@ -61,7 +61,7 @@ fun main(args: Array<String>) {
     println("Enter name/names numbers of you want to know: ")
 
     while (true) {
-        val input = Scanner(System.`in`)
+        val input = Scanner(System.`in`) // Scanner нужно обязательно закрывать
         val name = input.nextLine()
 
         if (name in hashMap.keys) {
